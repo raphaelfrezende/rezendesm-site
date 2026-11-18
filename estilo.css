@@ -157,6 +157,20 @@ p { margin: 0 0 14px; }
 .plantoes-arte img { position: relative; width: min(100%, 520px); }
 .nota-clara { margin: 26px 0 0; font-size: 15px; color: var(--texto-claro); }
 
+/* parceria PedPronto */
+.parceria { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; }
+.pp-marca { display: flex; align-items: center; gap: 10px; margin: 0 0 12px; font-size: 21px; font-weight: 800; letter-spacing: -.01em; color: #1d1d1b; }
+.pp-marca svg { width: 21px; height: 27px; flex: none; }
+.parceria h2 { margin-bottom: 4px; }
+.parceria-ficha { margin: 26px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.parceria-ficha div { padding: 14px 16px; border-radius: 18px; background: var(--creme); border: 1px solid var(--borda); }
+.parceria-ficha dt { margin-bottom: 2px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--coral-escuro); }
+.parceria-ficha dd { margin: 0; font-size: 15.5px; color: var(--texto); }
+.nota-pp { margin: 18px 0 24px; font-size: 14.5px; color: var(--texto-suave); }
+.parceria-tela { position: relative; display: grid; place-items: center; }
+.parceria-tela::before { content: ""; position: absolute; width: 82%; aspect-ratio: 1; border-radius: 50%; background: var(--ceu); }
+.parceria-tela img { position: relative; width: min(100%, 270px); filter: drop-shadow(0 30px 28px rgba(34, 50, 90, .2)); }
+
 /* equipe */
 .equipe { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .pessoa { display: flex; gap: 26px; align-items: center; padding: 30px; border-radius: 32px; background: var(--branco); border: 1px solid var(--borda); box-shadow: var(--sombra-leve); }
@@ -234,7 +248,8 @@ address { margin: 18px 0 26px; font-size: 18px; font-style: normal; line-height:
 
 @media (max-width: 1060px) {
   .menu { display: none; }
-  .abertura-grade, .sobre, .local, .plantoes { grid-template-columns: 1fr; }
+  .abertura-grade, .sobre, .local, .plantoes, .parceria { grid-template-columns: 1fr; }
+  .parceria-tela img { width: min(70%, 250px); }
   .abertura-arte { min-height: 0; width: 100%; max-width: 520px; margin: 10px auto 0; padding: 30px 0; }
   .fatos-lista { grid-template-columns: 1fr 1fr; }
   .servicos, .passos { grid-template-columns: 1fr 1fr; }
@@ -258,7 +273,7 @@ address { margin: 18px 0 26px; font-size: 18px; font-style: normal; line-height:
   .abertura-arte { padding: 26px 0 10px; }
   .abertura-arte img { width: min(74%, 300px); }
   .abertura-arte::before { width: 78%; }
-  .fatos-lista, .servicos, .passos, .dados, .ingles ul, .rodape-grade { grid-template-columns: 1fr; }
+  .fatos-lista, .servicos, .passos, .dados, .ingles ul, .rodape-grade, .parceria-ficha { grid-template-columns: 1fr; }
   .numeros { gap: 8px; }
   .numeros div { padding: 14px 10px; }
   .numeros dt { font-size: 25px; }
