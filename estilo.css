@@ -71,6 +71,8 @@ p { margin: 0 0 14px; }
 .topo-linha { display: flex; align-items: center; gap: 26px; min-height: 78px; }
 .marca { display: flex; align-items: center; gap: 12px; margin-right: auto; color: var(--marinho); text-decoration: none; }
 .marca .icone { font-size: 32px; color: var(--coral); }
+.marca-icone { flex: none; width: 44px; height: 44px; }
+.rodape .marca-icone { width: 52px; height: 52px; margin-bottom: 14px; }
 .marca-nome { display: block; font-family: var(--fonte-titulo); font-variation-settings: "SOFT" 100; font-size: 27px; font-weight: 600; line-height: 1; letter-spacing: -.01em; }
 .marca-sub { display: block; margin-top: 5px; font-size: 11px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; color: var(--coral-escuro); }
 .menu { display: flex; gap: 22px; }
@@ -172,11 +174,12 @@ p { margin: 0 0 14px; }
 .parceria-tela img { position: relative; width: min(100%, 270px); filter: drop-shadow(0 30px 28px rgba(34, 50, 90, .2)); }
 
 /* equipe */
-.equipe { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.pessoa { display: flex; gap: 26px; align-items: center; padding: 30px; border-radius: 32px; background: var(--branco); border: 1px solid var(--borda); box-shadow: var(--sombra-leve); }
+.equipe { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.pessoa { display: flex; flex-direction: column; gap: 22px; align-items: center; padding: 34px 26px 30px; border-radius: 32px; background: var(--branco); border: 1px solid var(--borda); box-shadow: var(--sombra-leve); text-align: center; }
 .pessoa-foto { position: relative; flex: none; width: 148px; height: 148px; }
 .pessoa-foto img, .iniciais { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: 50% 18%; box-shadow: 0 0 0 6px var(--coral-claro); }
 .iniciais { display: grid; place-items: center; background: var(--marinho); color: var(--creme); font-family: var(--fonte-titulo); font-variation-settings: "SOFT" 100; font-size: 46px; font-weight: 500; }
+.iniciais-coral { background: var(--coral-forte); }
 .pessoa-foto .icone { position: absolute; top: 2px; right: -6px; font-size: 32px; color: var(--mel); }
 .cargo { margin: 0 0 6px; font-size: 12.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--coral-escuro); }
 .pessoa h3 { margin-bottom: 10px; font-size: 25px; }
@@ -254,6 +257,7 @@ address { margin: 18px 0 26px; font-size: 18px; font-style: normal; line-height:
   .fatos-lista { grid-template-columns: 1fr 1fr; }
   .servicos, .passos { grid-template-columns: 1fr 1fr; }
   .equipe { grid-template-columns: 1fr; }
+  .pessoa { flex-direction: row; text-align: left; }
   .painel { padding: 56px 36px; }
   .sobre { gap: 40px; }
   .plantoes-arte { order: -1; max-width: 520px; margin: 0 auto; }
@@ -265,6 +269,7 @@ address { margin: 18px 0 26px; font-size: 18px; font-style: normal; line-height:
   .topo-linha { min-height: 64px; gap: 12px; }
   .marca { gap: 9px; }
   .marca .icone { font-size: 24px; }
+  .marca-icone { width: 36px; height: 36px; }
   .marca-nome { font-size: 22px; }
   .marca-sub { font-size: 9.5px; letter-spacing: .12em; }
   .abertura { padding-top: 34px; }
